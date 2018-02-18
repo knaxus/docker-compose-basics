@@ -1,5 +1,13 @@
 version : '3'
 
 services:
-  databse:
+  database:
     build: ./database
+  apparel:
+    build: ./apparel
+    volumes:
+      - ./apparel:/app
+    depends_on:
+      - database
+    ports:
+      - 5001:80
