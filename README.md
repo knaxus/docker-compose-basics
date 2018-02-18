@@ -6,11 +6,12 @@
 
 Open terminal follow these steps:
 
-* `wget -qO- https://get.doker.com/ | sh`
-* `sudo usermod -aG $(whoami)`
-* logout
+* `wget -qO- https://get.docker.com/ | sh`
+* `sudo usermod -aG docker $(whoami)`
 
-For docker compose:
+Now either logout/restart to use docker
+
+## For docker compose:
 
 * Follow this link [Install docker compose](https://docs.docker.com/compose/install/#install-compose)
 
