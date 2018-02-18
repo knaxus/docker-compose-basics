@@ -11,3 +11,11 @@ services:
       - database
     ports:
       - 5001:80
+  prices:
+    build: ./prices
+    volumes:
+      - ./prices:/app
+    depends_on:
+      - apparel
+    ports:
+      - 5002:80
